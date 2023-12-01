@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/upperConst"
@@ -60,8 +60,8 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/tabLayout"
             app:cardCornerRadius="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/tabLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -72,8 +72,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:paddingHorizontal="15dp"
                 android:gravity="center"
+                android:paddingHorizontal="15dp"
                 android:paddingVertical="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -84,20 +84,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Connected"
-                    android:textSize="15sp"
-                    />
+                    android:textSize="15sp" />
+
                 <ImageView
                     android:id="@+id/correct"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="5dp"
                     android:src="@drawable/baseline_chevron_left_24"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:tint="#48bd77" />
+                    app:layout_constraintHorizontal_bias="0.0" />
 
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
-
 
 
         <com.google.android.material.tabs.TabLayout
@@ -105,13 +103,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
+            android:background="#00ffffff"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:tabGravity="fill"
-            app:tabMode="fixed" />
+            app:tabIndicatorColor="@color/white"
+            app:tabIndicatorFullWidth="true"
+            app:tabMode="fixed"
+            app:tabTextColor="@color/white" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
