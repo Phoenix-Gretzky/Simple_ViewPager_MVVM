@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><!-- res/drawable/rounded_search_box_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- Background color, change as needed -->
+    <corners android:radius="5dp" />
+    <stroke android:color="#afafaf" android:width="1dp"/> <!-- Adjust the radius to control the curvature -->
+</shape>
